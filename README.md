@@ -34,7 +34,7 @@ The Booking Service provides the following APIs:
 
 4. **Retrieve Bookings**
 
-   `GET /bookings?userIdentifier=<email or phone number>`
+   `GET /bookings?userIdentifier=<email>`
    
    This API retrieves all the bookings created by a user based on their email or phone number. It searches for bookings using the provided user identifier. If no user identifier is provided, it returns an error.
 
