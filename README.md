@@ -67,7 +67,7 @@ docker build -t booking-service .
 docker run -p 3000:3000 -d booking-service
 ```
 
-The service will be accessible on `http://localhost:3000` after running the container.
+The service will be accessible on `http://localhost:3001` after running the container.
 
 ## Conclusion
 
