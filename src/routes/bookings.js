@@ -6,7 +6,7 @@ const calculatePricing = require('../utils/pricing');
 const sgMail = require('@sendgrid/mail');
 
 // Configure SendGrid API key
-sgMail.setApiKey('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');
+sgMail.setApiKey('');
 
 // POST /bookings
 router.post('/', async (req, res) => {
