@@ -14,6 +14,7 @@ const seatPricingData = [
   { seatClass: 'J', minPrice: 406.24, normalPrice: 868.71, maxPrice: null },
 ];
 
+
 const Pricing = sequelize.define(
   'Pricing',
   {
@@ -54,18 +55,5 @@ const Pricing = sequelize.define(
     tableName: 'pricing',
   }
 );
-
-// Insert data into the pricing table
-const insertData = async () => {
-  try {
-    await sequelize.sync();
-    await Pricing.bulkCreate(seatPricingData);
-    console.log('Pricing table created and data inserted successfully');
-  } catch (error) {
-    console.error('Error inserting data into the pricing table:', error);
-  }
-};
-
-insertData();
 
 module.exports = Pricing;
