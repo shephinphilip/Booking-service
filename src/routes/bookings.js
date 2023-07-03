@@ -6,7 +6,7 @@ const calculatePricing = require('../utils/pricing');
 const sgMail = require('@sendgrid/mail');
 
 // Configure SendGrid API key
-sgMail.setApiKey('');
+sgMail.setApiKey('REPLACE YOUR API TOKEN');
 
 // POST /bookings
 router.post('/', async (req, res) => {
@@ -50,7 +50,7 @@ router.post('/', async (req, res) => {
     // Send email using SendGrid
     const msg = {
       to: Email,
-      from: 'shephinphilip@gmail.com',
+      from: 'YOUR EMAIL',
       subject: 'Booking Confirmation',
       text: 'Your booking has been confirmed. Booking ID: ' + booking.id,
     };
